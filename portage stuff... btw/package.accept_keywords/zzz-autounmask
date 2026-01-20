@@ -1,0 +1,7 @@
+# required by gamemode (argument)
+=games-util/gamemode-1.8.2 ~amd64
+# required by gui-libs/xdg-desktop-portal-hyprland-1.3.11::guru
+# required by gui-libs/xdg-desktop-portal-hyprland (argument)
+=dev-cpp/sdbus-c++-2.1.0 ~amd64
+# required by gui-libs/xdg-desktop-portal-hyprland (argument)
+=gui-libs/xdg-desktop-portal-hyprland-1.3.11 ~amd64
