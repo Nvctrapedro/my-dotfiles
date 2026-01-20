@@ -1,0 +1,5 @@
+sys-kernel/installkernel dracut grub
+sys-kernel/gentoo-sources symlink
+gui-apps/swaybg gdk-pixbuf
+www-client/firefox -X dbus -gnome-shell -sndio system-pipewire wayland screencast l10n_pt-BR pulseaudio -jack -telemetry
+app-misc/fastfetch wayland X imagemagick chafa kitty
