@@ -1,0 +1,3 @@
+sys-kernel/cachyos-kernel ~amd64
+app-admin/keepassxc ~amd64
+games-util/heroic-bin ~amd64
