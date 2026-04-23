@@ -1,1 +1,5 @@
 media-sound/pulseaudio-daemon
+app-admin/sudo
+virtual/linux-sources
+sys-kernel/gentoo-sources
+gui-libs/display-manager-init
