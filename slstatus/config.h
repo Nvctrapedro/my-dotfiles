@@ -73,19 +73,17 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-    { battery_perc, "^fg(ffcc00)Bat: %s%%^fg() | ", "BAT0" },
+    { battery_perc, "Bat: %s%% | ", "BAT0" },
 
     { run_command,
-  "^fg(66ffff)Vol: %s^fg() | ",
+  "Vol: %s | ",
   "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%d%%\", $2*100}'" },
-    { wifi_perc,    "^fg(ffffff)WiFi: %s%%^fg() | ", "wlan0" },
+    { wifi_perc,    "WiFi: %s%% | ", "wlp5s0" },
 
-    { disk_perc,    "^fg(0088ff)Disk: %s%%^fg() | ", "/" },
-    { ram_used,     "^fg(ff0000)RAM: %sB^fg() | ", NULL },
-    { cpu_perc,     "^fg(00ff00)CPU: %s%%^fg() | ", NULL },
+    { cpu_perc,     "CPU: %s%% | ", NULL },
 
-    { temp,         "^fg(880000)Temp: %s°C^fg() | ",
+    { temp,         "Temp: %s°C | ",
                      "/sys/class/thermal/thermal_zone2/temp" },
 
-    { datetime,     "^fg(ff00ff)%s^fg()", "%H:%M" },
+    { datetime,     "%s", "%F %T" },
 };
